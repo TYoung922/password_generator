@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5e5e5e;
+  background-color: #013a1f;
   color: white;
 }
 
@@ -19,11 +19,13 @@ body {
   border: 2px solid black;
   padding: 2rem;
   border-radius: 0.4rem;
-  box-shadow: 5px 5px 5px rgba(57, 57, 57, 0.794);
+  background-color: #009238;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.794);
 }
 
 h1 {
   text-align: center;
+  text-shadow: 5px 5px 5px black;
 }
 
 label {
@@ -35,6 +37,11 @@ label {
 input {
   margin: 0.8rem 0;
 }
+
+input:checked {
+  box-shadow: 2px 2px 2px black;
+}
+
 button {
   display: block;
   margin: 1.1rem auto;
@@ -45,9 +52,14 @@ button {
   border: none;
   border-radius: 0.4rem;
   cursor: pointer;
+  box-shadow: 5px 5px 5px black;
 }
 button:hover {
   background-color: #0062cc;
+}
+
+button:active {
+  box-shadow: 2px 2px 2px black;
 }
 
 #password {
