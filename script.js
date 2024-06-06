@@ -83,6 +83,7 @@ let alphaLower = "abcdefghijklmnopqrstuvwxyz";
 let alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let numbers = "0123456789";
 let symbols = "!@#$%^&*()_+{}:;~?,./";
+let msg = document.querySelector(".exclaim");
 
 function generatePass() {
   let length = parseInt(document.querySelector("#length").value, 10);
@@ -103,4 +104,13 @@ function generatePass() {
     password += charSet[randomIndex];
   }
   document.querySelector("#password").value = password;
+
+  function mesage(msg) {}
+
+  if (msg.input == "") {
+    msg.style.display = "none";
+  } else {
+    msg.style.display = "block";
+    setTimeout(() => (msg.style.display = "none"), 3000);
+  }
 }

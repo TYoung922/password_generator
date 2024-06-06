@@ -70,3 +70,34 @@ button:active {
   width: 100%;
   box-sizing: border-box;
 }
+
+@keyframes exclaim {
+  0% {
+    color: orangered;
+  }
+  14% {
+    color: yellow;
+  }
+  28% {
+    color: orangered;
+  }
+  42% {
+    color: yellow;
+  }
+  57% {
+    color: orangeredb;
+  }
+  71% {
+    color: yellow;
+  }
+  85% {
+    color: orangered;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+.exclaim {
+  animation: exclaim 5s linear infinite;
+}
